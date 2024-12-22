@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+      <link rel="stylesheet" href="cssjs/progressive-image.css" />
+      <link rel="stylesheet" href="cssjs/spop.min.css" />
+      <link rel="stylesheet" href="playmus.css" />
+      <link rel="stylesheet" href="playmusk.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">  <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <title>Плейер 9 Ява</title>    <!-- <link rel="icon" type="Images/x-icon" href="atsicon.ico"/> -->
+    <link rel="shortcut icon" href="atsicon.ico" type="image/x-icon">
+  </head>
+<body>
+
+<div class="butnfon" id="butnfon">
+  <button class="btn btn-primary bg-transparent" id="butn01">&nbspОстров Ява&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn02">&nbspФон&nbsp1&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn03">&nbspФон&nbsp2&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn04">&nbspФон&nbsp3&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn05">&nbspФон&nbsp4&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn06">&nbspФон&nbsp5&nbsp</button>
+</div>
+
+<div class="butnfon1" id="butnfon1">
+  <button class="btn btn-primary bg-transparent" id="butn07">&nbspФон&nbsp6&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn08">&nbspФон&nbsp7&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn09">&nbspФон&nbsp8&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn10">&nbspФон&nbsp9&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn11">&nbspФон&nbsp10&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn12">&nbspФон&nbsp11&nbsp</button>
+  <button class="btn btn-primary bg-transparent" id="butn13">&nbspФон&nbsp12&nbsp</button>
+</div>
+
+<button id="otklvse" onclick="show_hide5()">&nbspВключить/Отключить меню&nbsp</button>
+
+<a href="back/ostrovyawa1.jpg" class="progressive replace" id="prim01"><img src="back/ostrovyawm1.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa2.jpg" class="progressive replace" id="prim02"><img src="back/ostrovyawm2.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa3.jpg" class="progressive replace" id="prim03"><img src="back/ostrovyawm3.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa4.jpg" class="progressive replace" id="prim04"><img src="back/ostrovyawm4.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa5.jpg" class="progressive replace" id="prim05"><img src="back/ostrovyawm5.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa6.jpg" class="progressive replace" id="prim06"><img src="back/ostrovyawm6.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa7.jpg" class="progressive replace" id="prim07"><img src="back/ostrovyawm7.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa8.jpg" class="progressive replace" id="prim08"><img src="back/ostrovyawm8.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa9.jpg" class="progressive replace" id="prim09"><img src="back/ostrovyawm9.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa10.jpg" class="progressive replace" id="prim10"><img src="back/ostrovyawm10.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa11.jpg" class="progressive replace" id="prim11"><img src="back/ostrovyawm11.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa12.jpg" class="progressive replace" id="prim12"><img src="back/ostrovyawm12.jpg" class="preview" alt="Нет фото" /></a> 
+<a href="back/ostrovyawa13.jpg" class="progressive replace" id="prim13"><img src="back/ostrovyawm13.jpg" class="preview" alt="Нет фото" /></a> 
+
+<!-- <div class="containerop" id="containerop"> <p></p> </div> -->
+  
+<div class="victor1" id="victor1">
+  <button onclick="show_hide2()">&nbspПлейер&nbsp</button>
+  <button> <a href="ssilki.html" target="_blank" title="Ссылки на перевод">Перевод</a> </button>
+  <button onclick="show_hide3()">&nbspФоны&nbsp</button>
+</div>
+
+<div class="butnfon2" id="butnfon2">
+  <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Доп. меню 1 </a> -->
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" 
+  aria-controls="offcanvasExample">Левое меню</button>
+
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" 
+  aria-controls="offcanvasBottom">Описание</button>
+  
+  <button class="btn btn-primary bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" 
+  aria-controls="offcanvasRight">Правое меню</button>
+</div>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Иностранные</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="musb07">La isla bonita    
+        <audio controls>
+            <source src="music/01-LaBonita.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb08">Knowing me, knowing you    
+        <audio controls>
+            <source src="music/02-KnowingMeKnowingYou.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb09">Rasputin&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <audio controls>
+            <source src="music/03-Rasputin.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb10">Money, money, money    
+        <audio controls>
+            <source src="music/04-MoneyMoney.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb11">S.O.S.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    
+        <audio controls>
+            <source src="music/05-SOSAbba.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb12">Soli&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    
+        <audio controls>
+            <source src="music/06-Soli1979.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+
+      <div class="dropdown mt-1">
+      </div>
+    </div>
+  </div>
+  
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Русские</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="musb01">Сердце Мальвины    
+        <audio controls>
+            <source src="music/07-Serdmalvini.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb02">Не пара&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
+        <audio controls>
+            <source src="music/08-Potapnepara.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb03">Пой, деревня&nbsp&nbsp&nbsp&nbsp    
+        <audio controls>
+            <source src="music/09-Poyderevna.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb04">Регги в ночи&nbsp&nbsp&nbsp&nbsp    
+        <audio controls>
+            <source src="music/10-Reggivnochi.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb05">Луч Солнца золотого   
+        <audio controls>
+            <source src="music/11-Luchsolnca.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+      <div id="musb06">Если б не было тебя   
+        <audio controls>
+            <source src="music/12-Nebiloteba.mp3" type="audio/mpeg">Прослушаем музыку
+        </audio>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+      <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Описание</h5> -->
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+Ява — остров в группе Больших Зондских островов Малайского архипелага. 
+Входит в состав Индонезии (столица этой страны, Джакарта, расположена на этом острове). Площадь — 132 000 км². 
+Остров является третьим по величине из полностью входящих в состав Индонезии после Суматры и Сулавеси.
+Ява окружена Яванским морем на севере, Зондским проливом на западе, Индийским океаном на юге и проливами Бали 
+и Мадура на востоке. Максимальная ширина острова — 210 км, а его длина — более 1000 км.
+Остров Ява почти полностью вулканического происхождения. Он содержит тридцать восемь гор, образующих хребет с 
+востока на запад, которые в то или иное время были активными вулканами. Самый высокий вулкан на Яве — гора 
+Семеру (3676 метров). Самым активным вулканом на Яве, а также в Индонезии является гора Мерапи (2930 метров). 
+Всего на Яве насчитывается более 150 гор.
+Остров Ява был открыт европейцами в 1511 году после взятия Малакки.
+На острове находится главная достопримечательность Индонезии — храм Боробудур. Эта святыня буддистской 
+религии представляет собой модель буддистской космологии. Храм является самым большим в мире буддистским 
+сооружением, входит в список важнейших архитектурно-исторических памятников ЮНЕСКО и относится к объектам 
+Всемирного наследия.  
+Также на острове Ява находится древнейший комплекс индуистских храмов Прамбанан, второй по размерам 
+индуистский храм в мире (после Ангкор-Ват), расположенный в окрестностях города Джокьякарта. 
+Он состоит из 240 храмов различных размеров и форм, построенных в период 
+между IX и X веками во времена процветания индуизма в регионе. 
+Культурным и историческим значением обладает также национальный парк Бромо-Тенгер-Семеру, занимающий 
+площадь около 800 квадратных километров и включающий в себя несколько вулканов. На его территории находятся 
+реликтовые деревни и археологические объекты.  
+  </div>
+</div> <!-- км² -->
+
+<div class="container" id="container">
+      <div id="zaonpp">ЗАО НПП "АТС"</div>     
+      <h2 id="music_title">Заголовок</h2>
+      <div class="player_progress" id="player_progress">
+        <div class="progress" id="progress">
+          <div class="music_duration">
+            <span id="current_time">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="player_controls">
+        <i class="fa-solid fa-backward" title="Предыдущий" id="prev"></i>
+        <i class="fa-solid fa-play play-button" title="Запуск" id="play"></i>
+        <i class="fa-solid fa-forward" title="Следующий" id="next"></i>
+      </div>
+</div>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="jquery-3.7.1.min.js"></script> -->
+  <script src="cssjs/progressive-image.js"></script>  
+  <script defer src="playmus.js"></script>
+  <script src="backgr.js"></script>  
+  <script src="vklvikl.js"></script>  
+
+<script src="cssjs/spop.min.js"></script>  
+<script src="spopdob.js"></script>  
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous">
+</script>
+  
+</body>
+</html>
+
