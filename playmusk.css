@@ -9,6 +9,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 .butnfon{ position: absolute; z-index: 3;}
 
 #otklvse{z-index: 5;}
+button{ border: 1px dashed #2c3544; border-radius: 10px; }
+
+.firstletter::first-letter{ 
+padding-left: 1.5rem;
+font-weight: bold;
+color: rgb(194, 22, 22);
+}
 
 *{
 -webkit-user-select: none;
