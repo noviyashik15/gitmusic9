@@ -9,12 +9,13 @@
   rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
   crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="vsplokno.css">
   <link rel="stylesheet" href="ssilki.css">
-  <link rel="icon" type="images/x-icon" href="atsicon.ico"/>
+  <link rel="icon" type="images/x-icon" href="../atsicon.ico"/>
 </head>
 <body>
 <div class="container-fluid text-center">
-<h3>Ссылки (перевод) и описание двух популярных групп</h3>
+<h4>Ссылки (перевод) и описание двух популярных групп</h4>
 <div class="row">
 <div class="col-2">
   
@@ -64,35 +65,61 @@ ABBA — шведская поп-группа, созданная в 1972 год
 Впервые четвёрка собралась для записи телепрограммы в Стокгольме, а петь вместе начала с ноября 1970 года.
 За выдающиеся заслуги в музыке 15&nbspмарта 2010 года группа ABBA была включена в Зал 
 славы рок-н-ролла.
+<span><button class="btkn" id="open-modal-btn" title="Фото">Abba</button></span>
 </div>
 
-<div class="bonitext" style="margin-top: 1rem;">
+<div class="bonitext" style="margin-top: .5rem;">
 Boney M. (Бони Эм.) — немецкая диско-группа, созданная в 1975 году в ФРГ известным 
 западногерманским музыкальным продюсером Фрэнком Фарианом.
-История легендарного диско-бэнда началась в 1974-м ещё до того, как собрались все участники. 
+История легендарного диско-бэнда началась в 1974&#8209;м ещё до того, как собрались все участники. 
 Тогда немецкий продюсер Фрэнк Фариан предпочёл поэкспериментировать и создал песню 
 Baby do you wanna bump.
 Он решил собрать коллектив, куда в первый состав попали Мэйзи Ульямс, её подруга Шейла Бонник, 
 а также два неких танцора Натали и Майк. Вскоре последних трёх достаточно быстро заменили 
-Марсия Барретт, Клаудия Бэрри и Бобби Фаррелл. В 1976-м на место Бэрри к ребятам пришла Лиз Митчелл. 
-В таком золотом составе диско-бэнд выступал до 1981-го, пока Фаррелл не ушёл искать себя в соло. 
+Марсия Барретт, Клаудия Бэрри и Бобби Фаррелл. В 1976&#8209;м на место Бэрри к ребятам пришла Лиз Митчелл. 
+В таком золотом составе диско-бэнд выступал до 1981&#8209;го, пока Фаррелл не ушёл искать себя в соло. 
 Энергичного «немого» фронтмена заменил профессиональный певец Рэджи Цибо. Спустя три года Бобби вернулся 
-обратно и пробыл в группе до её распада в 1986-м. 
+обратно и пробыл в группе до её распада в 1986&#8209;м. 
 Все привлечённые к проекту исполнители родились за пределами Германии, на Карибских островах, 
 перебравшись в Западную Европу в подростковом возрасте.
 Истоки названия группы Boney M. нужно искать в кинематографе. Фрэнк Фариан именовал проект в честь 
-детективного австралийского сериала Boney (1971-1972), где главным героем был инспектор Наполеон Бонапарт 
+детективного австралийского сериала Boney (1971&#8209;1972), где главным героем был инспектор Наполеон Бонапарт 
 по кличке Бони. Букву M продюсер добавил для гармоничности звучания.
 Коллектив вошёл в Книгу рекордов Гиннесса, как реализовавший наибольшее количество синглов. 
-</div>
-
+<button class="btkn" id="open-modal-btn-b" title="Фото">Boney M</button>
+</div>   <!-- &#8209; - Неразрывный дефис -->
 </div></div></div>
-
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"
- ></script>
 </div>
+
+<div class="modal" id="my-modal">
+  <div class="modal__box">
+    <button class="modal__close-btn" id="close-my-modal-btn">
+        <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333" />
+        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+        </svg>
+    </button>    <!-- <h2>Текст</h2> -->    <!-- <p style="text-align: center;">Ещё текст</p> -->
+    <img src="abba.jpg" alt="Нет фото" />
+   </div>
+</div>
+
+<div class="modal" id="my-modal-b">
+  <div class="modal__box">
+    <button class="modal__close-btn" id="close-my-modal-btn-b">
+        <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333" />
+        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+        </svg>
+    </button>    <!-- <h2>Текст</h2> -->    <!-- <p style="text-align: center;">Ещё текст</p> -->
+    <img src="bony.jpg" alt="Нет фото" />
+   </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script src="vsplokno.js"></script> 
+<script src="vsploknob.js"></script> 
 
 </body>
 </html>

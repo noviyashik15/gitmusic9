@@ -1,8 +1,7 @@
 * { margin: 0; padding: 0;
-/* background: linear-gradient(90deg, rgb(166, 181, 221), rgb(182, 232, 183)); */
 background-color: antiquewhite;
 }
-.btn{ margin-bottom: 4rem; background-color: rgb(205, 243, 173); }
+.btn{ margin-bottom: 4rem; color: #000; background-color: rgb(205, 243, 173); }
 a:hover{ color: red;} 
 
 h1{text-align: center;}
@@ -14,5 +13,8 @@ font-size: 1.2rem;
 align-items: center;
 border: 3px solid rgb(35, 101, 22);
 border-radius: 1rem;
-margin-right: 2.5rem;
+margin-right: 1rem;
 }
+
+.btkn{ border: 2px solid red; border-radius: 5px; color: green;}
+.btkn:hover{ color: blue; background-color: white;} 
