@@ -1,16 +1,3 @@
-// var a;
-// function show_hide()
-// {
-// if(a==1) {
-//     document.getElementById("containerop").style.display="inline";
-//     return a=0;
-// }
-// else{
-//     document.getElementById("containerop").style.display="none";
-//     return a=1;
-// }
-// }
-
 var b;
 function show_hide2()
 {
@@ -41,16 +28,6 @@ else{
 }
 }
 
-// const makefon = document.getElementById("makefon");
-// const containerop = document.getElementById("containerop");
-// makefon.addEventListener('click', function() {
-//     if (containerop.style.backgroundColor == 'green') {
-//         containerop.style.backgroundColor = null;
-//     } else {
-//         containerop.style.backgroundColor = 'green';
-//     }
-// });
-
 var vse;
 function show_hide5()
 {
@@ -64,4 +41,16 @@ else{
 }
 }
 
+var str;
+function show_hidestr()
+{
+if(str==1) {
+    document.getElementById("ticker").style.display="inline";
+    return str=0;
+}
+else{
+    document.getElementById("ticker").style.display="none";
+    return str=1;
+}
+}
 
